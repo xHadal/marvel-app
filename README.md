@@ -53,6 +53,7 @@ Serve app from dist directory with:
 # development
 $ npx http-server .
 ```
+## Modular Architecture with Separation of Concerns:
 
 ```
 src
@@ -107,7 +108,6 @@ src
 └── index.tsx // App entry point
 ```
 
-**Modular Architecture with Separation of Concerns:**
 
 The project utilizes a modular architecture with a clear separation of concerns. This promotes code reusability, maintainability, and testability. Here's a breakdown of the key aspects:
 
