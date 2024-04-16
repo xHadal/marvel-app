@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styled from "styled-components";
 import marvelIcon from "@assets/marvel-logo.svg";
 import { NavLink } from "react-router-dom";

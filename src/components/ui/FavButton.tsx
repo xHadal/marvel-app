@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styled from "styled-components";
 import favIcon from "@assets/fav-icon.svg";
 import favIconFilled from "@assets/fav-icon-filled.svg";

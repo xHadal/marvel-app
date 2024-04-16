@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Section } from "@components/ui/layout/Section";
 import Card from "@components/ui/Card";
@@ -40,7 +40,7 @@ const Dashboard: React.FC<DashboardProps> = () => {
     };
 
     fetchData();
-  }, [debouncedSearch, dispatchHeroesList, heroesList.data]);
+  }, [debouncedSearch, dispatchHeroesList]);
 
   const filterItems = useCallback((value: string) => {
     setSearch(value);

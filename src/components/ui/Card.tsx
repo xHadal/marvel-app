@@ -1,4 +1,4 @@
-import React, { FC, useCallback } from "react";
+import { FC, useCallback } from "react";
 import styled from "styled-components";
 import FavButton from "@components/ui/FavButton";
 import { IHeroInfo } from "@utils/types";

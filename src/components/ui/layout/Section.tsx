@@ -1,4 +1,4 @@
-import React, { ReactNode, FC, Fragment } from "react";
+import { ReactNode, FC, Fragment } from "react";
 import styled from "styled-components";
 import NavBar from "~/src/components/ui/NavBar";
 

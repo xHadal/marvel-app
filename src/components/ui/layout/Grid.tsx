@@ -1,15 +1,14 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styled from "styled-components";
 interface GridProps {
-  items: JSX.IntrinsicElements[];
-  children: JSX.Element;
+  items: JSX.Element[];
 }
 
-const Grid: FC<GridProps> = ({ items, children }) => {
+const Grid: FC<GridProps> = ({ items }) => {
   return (
     <GridContainer>
       {items.map((item, i) => {
-        return <GridItem key={i}>{children}</GridItem>;
+        return <GridItem key={i}>{item}</GridItem>;
       })}
     </GridContainer>
   );

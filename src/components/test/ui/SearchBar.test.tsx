@@ -1,4 +1,3 @@
-import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import SearchBar from "../../ui/SearchBar"; // Assuming SearchBar is in the same directory
 import "@testing-library/jest-dom";

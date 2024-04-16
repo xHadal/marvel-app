@@ -1,4 +1,3 @@
-import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Card from "../../ui/Card";
@@ -17,7 +16,8 @@ describe("Card component", () => {
   });
 
   beforeEach(() => {
-    useAppState.mockReturnValue(mockUseAppState());
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (useAppState as any).mockReturnValue(mockUseAppState());
   });
 
   afterEach(() => {

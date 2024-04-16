@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useCallback } from "react";
+import { FC, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import { Section } from "@/components/ui/layout/Section";
 import { useAppState } from "@context/Global";

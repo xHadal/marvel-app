@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import { FC, Fragment } from "react";
 import styled from "styled-components";
 import SliderSkeleton from "@components/ui/layout/skeleton/SliderSkeleton";
 interface ISliderItem {

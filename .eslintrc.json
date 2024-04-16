@@ -19,8 +19,9 @@
     "react-hooks"
   ],
   "rules": {
-    // Aquí puedes personalizar las reglas de ESLint según tus preferencias
-     "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off"
   },
   "settings": {
     "react": {

@@ -1,4 +1,4 @@
-import React, { FC, Fragment, useRef } from "react";
+import { FC, Fragment, useRef } from "react";
 import styled from "styled-components";
 
 interface SearchBarProps {
