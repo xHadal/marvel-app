@@ -20,6 +20,9 @@ $ npm install
 
 ## Running the app
 
+!! Use .env.example as template to configure private api key. Rename file to .env
+!! Please contact with project owner to provide PRIVATE_API_KEY.
+
 ```bash
 # development
 $ npm run dev

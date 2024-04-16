@@ -7,7 +7,8 @@ interface FetchProps {
   limit?: string;
 }
 
-const API_URL: string = import.meta.env.VITE_API_URL || "";
+const API_URL: string =
+  import.meta.env.VITE_API_URL || "https://gateway.marvel.com";
 
 export const fetchCharacters = async ({
   name,
