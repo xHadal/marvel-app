@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  background-color: #eee;
+  width: 0.3vw;
+}
+
+::-moz-scrollbar {
+  width: 0.3vw;
+}
+
+scrollbar {
+  width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+button {
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+}
