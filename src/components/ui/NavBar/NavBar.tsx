@@ -2,8 +2,8 @@ import { FC } from "react";
 import styled from "styled-components";
 import marvelIcon from "@assets/marvel-logo.svg";
 import { NavLink } from "react-router-dom";
-import { useAppState } from "@context/Global";
-import FavButton from "@components/ui/FavButton";
+import { useAppState } from "@context/state/Global";
+import FavButton from "@components/ui/FavButton/FavButton";
 
 const NavBar: FC = () => {
   /**TODO:

@@ -1,8 +1,8 @@
+import * as React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import SearchBar from "../../ui/SearchBar"; // Assuming SearchBar is in the same directory
+import SearchBar from "./SearchBar";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
-
 // Define a mock function for handleOnchange
 const mockHandleOnchange = jest.fn();
 

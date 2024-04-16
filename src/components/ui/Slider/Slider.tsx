@@ -1,17 +1,9 @@
-import { FC, Fragment } from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
-import SliderSkeleton from "@components/ui/layout/skeleton/SliderSkeleton";
-interface ISliderItem {
-  img: string;
-  title: string;
-  note: string;
-}
-interface SliderProps {
-  items: ISliderItem[];
-  isLoading: boolean;
-}
+import SliderSkeleton from "@components/layout/SliderSkeleton/SliderSkeleton";
 
-const Slider: FC<SliderProps> = ({ items, isLoading }) => {
+import { ISliderProps, ISliderItem } from "./types";
+const Slider: React.FC<ISliderProps> = ({ items, isLoading }) => {
   return (
     <Fragment>
       {isLoading ? (

@@ -1,12 +1,11 @@
-import { FC, Fragment, useRef } from "react";
+import React, { Fragment, useRef } from "react";
 import styled from "styled-components";
+import { SearchBarProps } from "./types";
 
-interface SearchBarProps {
-  handleOnchange: (value: string) => void;
-  resultsCounter: number;
-}
-
-const SearchBar: FC<SearchBarProps> = ({ handleOnchange, resultsCounter }) => {
+const SearchBar: React.FC<SearchBarProps> = ({
+  handleOnchange,
+  resultsCounter,
+}) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (

@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { useCallback, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Section } from "@components/ui/layout/Section";
-import Card from "@components/ui/Card";
+import { Section } from "@components/layout/Section/Section";
+import Card from "@components/ui/Card/Card";
 import { fetchCharacters } from "@utils/fetch";
-import SearchBar from "@components/ui/SearchBar";
-interface DashboardProps {}
-import { useAppState } from "@context/Global";
+import SearchBar from "@components/ui/SearchBar/SearchBar";
+import { useAppState } from "@context/state/Global";
 import { useDebounce } from "@utils/Debounce";
-import { IHeroInfo } from "@utils/types";
-import GridSkeleton from "@components/ui/layout/skeleton/GridSkeleton";
+import { IHeroInfo } from "@context/state/types";
+import GridSkeleton from "@components/layout/GridSkeleton/GridSkeleton";
+
+interface DashboardProps {}
 
 const Dashboard: React.FC<DashboardProps> = () => {
   /**TODO:

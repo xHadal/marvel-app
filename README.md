@@ -20,7 +20,7 @@ $ npm install
 
 ## Running the app
 
-!! Use .env.example as template to configure private api key. Rename file to .env
+!! Use .env.example as template to configure private api key. Rename file to .env<br>
 !! Please contact with project owner to provide PRIVATE_API_KEY.
 
 ```bash
@@ -41,25 +41,39 @@ $ npm run test
 src
 ├── assets // Static files (images, icons, etc.)
 ├── components
-│ ├── test // Unitary test for components
-│ │ ├── Card.test.tsx
-│ │ ├── SearchBar.test.tsx
-│ │ └── Slider.test.tsx
 │ ├── ui // User Interface Components(Search, Card, etc.)
-│ │ ├── Card.tsx
-│ │ ├── FavButton.tsx
-│ │ ├── NavBar.tsx
-│ │ ├── SearchBar.tsx
-│ │ └── Slider.tsx
+│ │ └──  Card
+│ │ │     ├── Card.tsx
+│ │ │     ├── Card.test.tsx
+│ │ │     └──types.ts
+│ │ └──  FavButton
+│ │ │     ├── FavButton.tsx
+│ │ │     ├── FavButton.test.tsx
+│ │ │     └──types.ts
+│ │ └──  NavBar
+│ │ │     ├── NavBar.tsx
+│ │ │     ├── NavBar.test.tsx
+│ │ │     └──types.ts
+│ │ └──  SearchBar
+│ │ │     ├── SearchBar.tsx
+│ │ │     ├── SearchBar.test.tsx
+│ │ │     └──types.ts
+│ │ └──  Slider
+│ │       ├── Slider.tsx
+│ │       ├── Slider.test.tsx
+│ │       └──types.ts
 │ └── layout // Layout
-│ ├── Grid.tsx
-│ ├── Section.tsx
-│ └── skeleton // Loading skeletons
-│ ├── GridSkeleton.tsx
-│ └── SliderSkeleton.tsx
+│      ├── Grid.tsx
+│      ├── Section.tsx
+│      ├── GridSkeleton.tsx
+│      └── SliderSkeleton.tsx
 ├── context // Aplication global state
-│ ├── Global.tsx
-│ └── Theme.tsx
+│ ├── state
+│ │    ├── Global.tsx
+│ │    └── types.ts
+│ └── theme
+│      ├── Theme.tsx
+│      └── types.ts
 ├── pages // App pages
 │ ├── Detail[id].tsx // Details of a specific item. Dynamic path for details (ex: /detail/123)
 │ └── Dashboard.tsx

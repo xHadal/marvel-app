@@ -1,6 +1,7 @@
+import * as React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Slider from "../../ui/Slider";
+import Slider from "./Slider";
 
 describe("Slider component", () => {
   it("renders slider with items", () => {

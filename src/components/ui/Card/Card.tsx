@@ -1,13 +1,10 @@
-import { FC, useCallback } from "react";
+import React, { useCallback } from "react";
 import styled from "styled-components";
-import FavButton from "@components/ui/FavButton";
-import { IHeroInfo } from "@utils/types";
-interface CardProps {
-  itemInfo: IHeroInfo;
-}
-import { useAppState } from "@context/Global";
+import FavButton from "@components/ui/FavButton/FavButton";
+import { useAppState } from "@context/state/Global";
+import { CardProps } from "./types";
 
-const Card: FC<CardProps> = ({ itemInfo }: CardProps) => {
+const Card: React.FC<CardProps> = ({ itemInfo }: CardProps) => {
   const { id, name, thumbnail } = itemInfo;
   const { favs, dispatchFavs } = useAppState();
   const isFav = favs.list.includes(Number(id));

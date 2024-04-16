@@ -1,11 +1,7 @@
-import { ReactNode, FC, Fragment } from "react";
+import { FC, Fragment } from "react";
 import styled from "styled-components";
-import NavBar from "~/src/components/ui/NavBar";
-
-interface SectionProps {
-  children: ReactNode;
-  mode?: "fullwidth" | "centered";
-}
+import NavBar from "@components/ui/NavBar/NavBar";
+import { SectionProps } from "./types";
 
 export const Section: FC<SectionProps> = ({
   children,

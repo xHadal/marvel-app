@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { AppAction, AppState, AppContextType, IHeroInfo } from "@utils/types";
+import { AppAction, AppState, AppContextType, IHeroInfo } from "@state/types";
 
 const initialState: AppState = {
   heroesList: {

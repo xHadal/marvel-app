@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { FC } from "react";
+import React from "react";
 
 interface SliderProps {}
 
-const SliderSkeleton: FC<SliderProps> = () => {
+const SliderSkeleton: React.FC<SliderProps> = () => {
   return (
     <StyledSlider data-testid="slider-skeleton">
       {Array.from({ length: 5 }).map((_, i) => (

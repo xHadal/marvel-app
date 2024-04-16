@@ -1,8 +1,4 @@
 /* eslint-disable no-undef */
-/* const { pathsToModuleNameMapper } = require("ts-jest");
-const { compilerOptions } = require("./tsconfig.json");
-const paths = compilerOptions.paths;
- */
 module.exports = {
   roots: ["<rootDir>/src"],
   collectCoverageFrom: [
@@ -11,7 +7,7 @@ module.exports = {
     "!src/mocks/**",
   ],
   coveragePathIgnorePatterns: [],
-  /*  setupFilesAfterEnv: ["./config/jest/setupTests.js"], */
+
   testEnvironment: "jsdom",
   modulePaths: ["<rootDir>/src"],
   transform: {
@@ -35,10 +31,9 @@ module.exports = {
     "components/(.*)": ["<rootDir>/src/components/$1"],
     "utils/(.*)": ["<rootDir>/src/utils/$1"],
     "context/(.*)": ["<rootDir>/src/context/$1"],
+    "state/(.*)": ["<rootDir>/src/context/state/$1"],
   },
   moduleFileExtensions: [
-    // Place tsx and ts to beginning as suggestion from Jest team
-    // https://jestjs.io/docs/configuration#modulefileextensions-arraystring
     "tsx",
     "ts",
     "web.js",

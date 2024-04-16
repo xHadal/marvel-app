@@ -1,16 +1,10 @@
-import { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 import favIcon from "@assets/fav-icon.svg";
 import favIconFilled from "@assets/fav-icon-filled.svg";
+import { FavButtonProps } from "./types";
 
-interface FavButtonProps {
-  size: "small" | "large";
-  areaLabel: string;
-  isFav?: boolean;
-  handleClick: React.MouseEventHandler<HTMLButtonElement>;
-}
-
-const FavButton: FC<FavButtonProps> = ({
+const FavButton: React.FC<FavButtonProps> = ({
   areaLabel,
   handleClick,
   size = "small",

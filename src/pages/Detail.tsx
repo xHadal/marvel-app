@@ -1,12 +1,12 @@
 import { FC, useEffect, useCallback } from "react";
 import styled from "styled-components";
-import { Section } from "@/components/ui/layout/Section";
-import { useAppState } from "@context/Global";
+import { Section } from "@components/layout/Section/Section";
+import { useAppState } from "@context/state/Global";
 import { useParams } from "react-router-dom";
 import { fetchCharacters } from "@/utils/fetch";
-import Slider from "@components/ui/Slider";
-import FavButton from "@/components/ui/FavButton";
-import { IHeroInfo, IComicInfo } from "@/utils/types";
+import Slider from "@components/ui/Slider/Slider";
+import FavButton from "@components/ui/FavButton/FavButton";
+import { IHeroInfo, IComicInfo } from "@context/state/types";
 interface DetailProps {}
 
 const Detail: FC<DetailProps> = () => {

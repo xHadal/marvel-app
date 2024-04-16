@@ -1,10 +1,11 @@
+import * as React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Card from "../../ui/Card";
+import Card from "./Card";
 
-import { useAppState } from "@context/Global";
+import { useAppState } from "@state/Global";
 
-jest.mock("@context/Global", () => ({
+jest.mock("@context/state/Global", () => ({
   useAppState: jest.fn(),
 }));
 

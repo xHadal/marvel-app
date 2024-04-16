@@ -1,15 +1,7 @@
 import React, { createContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "@theme/index";
-import { ICommonTheme } from "styled-components";
-
-interface IThemeContextProvider {
-  children: React.ReactNode;
-}
-interface IThemeContext {
-  mode: ICommonTheme;
-  toggle: () => void;
-}
+import { IThemeContextProvider, IThemeContext } from "@context/theme/types";
 
 const defaultMode = lightTheme;
 
