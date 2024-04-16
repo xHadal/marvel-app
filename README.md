@@ -37,6 +37,23 @@ Some example tests has been added. For a production enviroment complete the test
 $ npm run test
 ```
 
+## Building the app
+
+!! Use .env.example as template to configure private api key. Rename file to .env<br>
+!! Please contact with project owner to provide PRIVATE_API_KEY.
+
+```bash
+# build
+$ npm run build
+```
+
+Serve app from dist directory with:
+
+```bash
+# development
+$ npx http-server .
+```
+
 ```
 src
 ├── assets // Static files (images, icons, etc.)
