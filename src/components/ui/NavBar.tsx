@@ -6,6 +6,9 @@ import { useAppState } from "@context/Global";
 import FavButton from "@components/ui/FavButton";
 
 const NavBar: FC = () => {
+  /**TODO:
+   * Add test for the NavBar.tsx component
+   */
   const { favs, heroesList, dispatchHeroesList } = useAppState();
   const favAriaLabel = `View favourite list`;
   const handleFavListClick = () => {

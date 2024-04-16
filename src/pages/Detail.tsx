@@ -10,6 +10,9 @@ import { IHeroInfo, IComicInfo } from "@/utils/types";
 interface DetailProps {}
 
 const Detail: FC<DetailProps> = () => {
+  /**TODO:
+   * Add test for the detail component
+   */
   const {
     heroDetails,
     dispatchHeroDetails,

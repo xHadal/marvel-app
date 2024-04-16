@@ -13,10 +13,7 @@ import GridSkeleton from "@components/ui/layout/skeleton/GridSkeleton";
 
 const Dashboard: React.FC<DashboardProps> = () => {
   /**TODO:
-   * 3. Add test for the dashboard component
-   * 4. Add test for the detail component
-   * 5. Add test for the favs component
-   * 6. Add test for the navbar component
+   * Add test for the Dashboard.tsx component
    */
   const [search, setSearch] = useState("");
   const { heroesList, dispatchHeroesList, dispatchHeroDetails } = useAppState();

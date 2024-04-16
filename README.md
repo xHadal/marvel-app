@@ -4,7 +4,13 @@ This application is ready for exploring Marvel heroes.
 
 ## Stack
 
-React, Typescript, Jest, Styled-Components
+<ul>
+<li>React (v.18.2.0)</li>
+<li>Typescript (v.5.3.3)</li>
+<li>Jest (v.29.7.0), </li>
+<li>Styled-Components (v.6.1.1)</li>
+<li>Node (v.20)</li>
+</ul>
 
 ## Installation
 
@@ -21,10 +27,13 @@ $ npm run dev
 
 ## Running tests
 
+Some example tests has been added. For a production enviroment complete the tests. (Check TODO: comments)
+
 ```bash
 # development
 $ npm run test
 ```
+
 ```
 src
 ├── assets // Static files (images, icons, etc.)
@@ -32,7 +41,7 @@ src
 │ ├── test // Unitary test for components
 │ │ ├── Card.test.tsx
 │ │ ├── SearchBar.test.tsx
-│ │ └── Slider.test.tsx  
+│ │ └── Slider.test.tsx
 │ ├── ui // User Interface Components(Search, Card, etc.)
 │ │ ├── Card.tsx
 │ │ ├── FavButton.tsx
@@ -46,13 +55,13 @@ src
 │ ├── GridSkeleton.tsx
 │ └── SliderSkeleton.tsx
 ├── context // Aplication global state
-│ ├── Global.tsx  
+│ ├── Global.tsx
 │ └── Theme.tsx
 ├── pages // App pages
 │ ├── Detail[id].tsx // Details of a specific item. Dynamic path for details (ex: /detail/123)
-│ └── Dashboard.tsx  
+│ └── Dashboard.tsx
 ├── routes // App router
-│ └── Router.tsx  
+│ └── Router.tsx
 ├── theme // App Theme
 │ └── index.tsx
 ├── utils // Common functions and utilities
@@ -60,8 +69,10 @@ src
 │ ├── fetch.tsx // HTTP request
 │ └── types.ts // Types definitions
 ├── App.tsx // App root component
+├── i18n.js // i18n config for translations
 └── index.tsx // App entry point
 ```
+
 **Modular Architecture with Separation of Concerns:**
 
 The project utilizes a modular architecture with a clear separation of concerns. This promotes code reusability, maintainability, and testability. Here's a breakdown of the key aspects:
@@ -72,7 +83,7 @@ The project utilizes a modular architecture with a clear separation of concerns.
   - **Layout:** Layout components like `Grid`, `Section`, and loading skeletons (`GridSkeleton` and `SliderSkeleton`) are stored here.
 - **Context:** Global application state is managed using React Context. The project utilizes two contexts:
   - `Global.tsx`: Likely stores general application data.
-  - `Theme.tsx`: Potentially manages the application's theme (colors, fonts, etc.).
+  - `Theme.tsx`: Potentially manages the application's theme (colors, fonts, etc.). (Light and Dark themes has been configured and ready to use. Colors needs to be defined for this project)
 - **Pages:** Application pages like `Detail[id].tsx` (dynamic detail page) and `Dashboard.tsx` are located here.
 - **Routes:** Routing logic is likely handled in a separate `Router.tsx` file for cleaner separation.
 - **Theme:** A dedicated `theme` directory potentially houses the application's theme configuration (`index.tsx`).

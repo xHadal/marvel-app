@@ -16,6 +16,9 @@ const FavButton: FC<FavButtonProps> = ({
   size = "small",
   isFav,
 }) => {
+  /**TODO:
+   * Add test for the FavButton.tsx component
+   */
   return (
     <StyledFavButton
       $isFav={isFav || false}
